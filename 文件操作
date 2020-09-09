@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+const int cutoff=6000;
+const float rate1=0.3;
+const float rate2=0.6;
+int main(){
+	ifstream infile;
+	ofstream outfile;//实例化输入输出流
+	int income,tax;//中间容器 
+	infile.open("income.in")//使用方法 
+	outfile.open("tax.out") 
+	while(infile>>income){
+		if(income,cutoff)
+		tax=rate1*income;
+		else
+		tax=rate2*income;
+		outfile<<"income="<<income
+		<<
+	}
+	infile.close();
+	outfile.close();
+	return 0;//关闭流 
+}
+
